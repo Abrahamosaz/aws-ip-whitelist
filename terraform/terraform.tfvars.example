@@ -1,0 +1,9 @@
+aws_region              = "eu-north-1"
+api_name                = "ip-whitelist-api"
+lambda_function_name    = "ip-whitelist-api"
+whitelist_table_name    = "ip-whitelist"
+
+tailscale_instance_type = "t3.micro"
+tailscale_instance_name = "tailscale-proxy-node"
+ssh_ingress_cidr        = "0.0.0.0/0"
+# tailscale_auth_key   = "tskey-auth-..."

@@ -1,0 +1,18 @@
+# Terraform
+terraform/.build/
+terraform/.terraform/
+terraform/*.tfstate
+terraform/*.tfstate.*
+terraform/.terraform.lock.hcl
+terraform/*.tfvars
+!terraform/*.tfvars.example
+terraform/*.pem
+
+# Lambda
+lambda/node_modules/
+
+# OS / editor
+.DS_Store
+*.swp
+.idea/
+.vscode/

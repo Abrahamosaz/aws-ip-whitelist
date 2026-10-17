@@ -1,0 +1,86 @@
+{
+  "info": {
+    "_postman_id": "690e4efa-9553-449e-b47d-30e64096448e",
+    "name": "IP Whitelisting Task Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "30702099",
+    "_collection_link": "https://go.postman.co/collection/30702099-690e4efa-9553-449e-b47d-30e64096448e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get Whitelisted APIs",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/whitelist",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "whitelist"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Add Whitelisted IPs",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"ip\": \"102.89.69.249\",\n  \"label\": \"My Server IP\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{base_url}}/whitelist",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "whitelist"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Protected Endpoint",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{base_url}}/protected-data",
+          "host": [
+            "{{base_url}}"
+          ],
+          "path": [
+            "protected-data"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "base_url",
+      "value": ""
+    }
+  ]
+}
